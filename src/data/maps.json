@@ -1,0 +1,502 @@
+[
+	{
+		"id": "T6_HELLGATE_2V2_LETHAL_1_MAP",
+		"title": "Master's Hellgate Ritual (2v2 - Lethal)",
+		"itemValue": 3000,
+		"craftingCost": 15000,
+		"craftingMaterial": {
+			"name": "T6_SOUL",
+			"count": 2
+		}
+	},
+	{
+		"id": "T7_HELLGATE_5V5_LETHAL_1_MAP",
+		"title": "Grandmaster's Hellgate Ritual (5v5 - Lethal)",
+		"itemValue": 20000,
+		"craftingCost": 100000,
+		"craftingMaterial": {
+			"name": "T7_SOUL",
+			"count": 5
+		}
+	},
+	{
+		"id": "T8_HELLGATE_10V10_LETHAL_1_MAP",
+		"title": "Elder's Hellgate Ritual (10v10 - Lethal)",
+		"itemValue": 100000,
+		"craftingCost": 500000,
+		"craftingMaterial": {
+			"name": "T8_SOUL",
+			"count": 10
+		}
+	},
+	{
+		"id": "T5_HELLGATE_2V2_NON_LETHAL_1_MAP",
+		"title": "Expert's Hellgate Ritual (2v2 - Nonlethal)",
+		"itemValue": 600,
+		"craftingCost": 3000,
+		"craftingMaterial": {
+			"name": "T5_SOUL",
+			"count": 2
+		}
+	},
+	{
+		"id": "T5_HELLGATE_5V5_NON_LETHAL_1_MAP",
+		"title": "Expert's Hellgate Ritual (5v5 - Nonlethal)",
+		"itemValue": 4000,
+		"craftingCost": 20000,
+		"craftingMaterial": {
+			"name": "T5_SOUL",
+			"count": 5
+		}
+	},
+	{
+		"id": "T5_HELLGATE_10V10_NON_LETHAL_1_MAP",
+		"title": "Expert's Hellgate Ritual (10v10 - Nonlethal)",
+		"itemValue": 20000,
+		"craftingCost": 100000,
+		"craftingMaterial": {
+			"name": "T5_SOUL",
+			"count": 10
+		}
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_ELITE_TOKEN_1",
+		"title": "Master's Dungeon Map (Large Group)",
+		"itemValue": 150000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T6_RANDOM_DUNGEON_TOKEN_1",
+			"count": 5
+		}
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_ELITE_TOKEN_1",
+		"title": "Grandmaster's Dungeon Map (Large Group)",
+		"itemValue": 210000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T7_RANDOM_DUNGEON_TOKEN_1",
+			"count": 5
+		}
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_ELITE_TOKEN_1",
+		"title": "Elder's Dungeon Map (Large Group)",
+		"itemValue": 303000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T8_RANDOM_DUNGEON_TOKEN_1",
+			"count": 5
+		}
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_ELITE_TOKEN_2",
+		"title": "Uncommon Master's Dungeon Map (Large Group)",
+		"itemValue": 198000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T6_RANDOM_DUNGEON_TOKEN_2",
+			"count": 5
+		}
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_ELITE_TOKEN_2",
+		"title": "Uncommon Grandmaster's Dungeon Map (Large Group)",
+		"itemValue": 276000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T7_RANDOM_DUNGEON_TOKEN_2",
+			"count": 5
+		}
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_ELITE_TOKEN_2",
+		"title": "Uncommon Elder's Dungeon Map (Large Group)",
+		"itemValue": 399000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T8_RANDOM_DUNGEON_TOKEN_2",
+			"count": 5
+		}
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_ELITE_TOKEN_3",
+		"title": "Rare Master's Dungeon Map (Large Group)",
+		"itemValue": 257000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T6_RANDOM_DUNGEON_TOKEN_3",
+			"count": 5
+		}
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_ELITE_TOKEN_3",
+		"title": "Rare Grandmaster's Dungeon Map (Large Group)",
+		"itemValue": 358000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T7_RANDOM_DUNGEON_TOKEN_3",
+			"count": 5
+		}
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_ELITE_TOKEN_3",
+		"title": "Rare Elder's Dungeon Map (Large Group)",
+		"itemValue": 517000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T8_RANDOM_DUNGEON_TOKEN_3",
+			"count": 5
+		}
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_ELITE_TOKEN_4",
+		"title": "Exceptional Master's Dungeon Map (Large Group)",
+		"itemValue": 336000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T6_RANDOM_DUNGEON_TOKEN_4",
+			"count": 5
+		}
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_ELITE_TOKEN_4",
+		"title": "Exceptional Grandmaster's Dungeon Map (Large Group)",
+		"itemValue": 469000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T7_RANDOM_DUNGEON_TOKEN_4",
+			"count": 5
+		}
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_ELITE_TOKEN_4",
+		"title": "Exceptional Elder's Dungeon Map (Large Group)",
+		"itemValue": 677000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T8_RANDOM_DUNGEON_TOKEN_4",
+			"count": 5
+		}
+	},
+	{
+		"id": "T4_RANDOM_DUNGEON_SOLO_TOKEN_1",
+		"title": "Adept's Dungeon Map (Solo)",
+		"itemValue": 3400,
+		"craftingCost": 16800
+	},
+	{
+		"id": "T5_RANDOM_DUNGEON_SOLO_TOKEN_1",
+		"title": "Expert's Dungeon Map (Solo)",
+		"itemValue": 4500,
+		"craftingCost": 22400
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_SOLO_TOKEN_1",
+		"title": "Master's Dungeon Map (Solo)",
+		"itemValue": 6000,
+		"craftingCost": 30000
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_SOLO_TOKEN_1",
+		"title": "Grandmaster's Dungeon Map (Solo)",
+		"itemValue": 8400,
+		"craftingCost": 42000
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_SOLO_TOKEN_1",
+		"title": "Elder's Dungeon Map (Solo)",
+		"itemValue": 12100,
+		"craftingCost": 60600
+	},
+	{
+		"id": "T4_RANDOM_DUNGEON_SOLO_TOKEN_2",
+		"title": "Uncommon Adept's Dungeon Map (Solo)",
+		"itemValue": 4400,
+		"craftingCost": 22000
+	},
+	{
+		"id": "T5_RANDOM_DUNGEON_SOLO_TOKEN_2",
+		"title": "Uncommon Expert's Dungeon Map (Solo)",
+		"itemValue": 5900,
+		"craftingCost": 29400
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_SOLO_TOKEN_2",
+		"title": "Uncommon Master's Dungeon Map (Solo)",
+		"itemValue": 7900,
+		"craftingCost": 39600
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_SOLO_TOKEN_2",
+		"title": "Uncommon Grandmaster's Dungeon Map (Solo)",
+		"itemValue": 11000,
+		"craftingCost": 55200
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_SOLO_TOKEN_2",
+		"title": "Uncommon Elder's Dungeon Map (Solo)",
+		"itemValue": 16000,
+		"craftingCost": 79800
+	},
+	{
+		"id": "T4_RANDOM_DUNGEON_SOLO_TOKEN_3",
+		"title": "Rare Adept's Dungeon Map (Solo)",
+		"itemValue": 5700,
+		"craftingCost": 28600
+	},
+	{
+		"id": "T5_RANDOM_DUNGEON_SOLO_TOKEN_3",
+		"title": "Rare Expert's Dungeon Map (Solo)",
+		"itemValue": 7600,
+		"craftingCost": 38200
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_SOLO_TOKEN_3",
+		"title": "Rare Master's Dungeon Map (Solo)",
+		"itemValue": 10300,
+		"craftingCost": 51400
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_SOLO_TOKEN_3",
+		"title": "Rare Grandmaster's Dungeon Map (Solo)",
+		"itemValue": 14300,
+		"craftingCost": 71600
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_SOLO_TOKEN_3",
+		"title": "Rare Elder's Dungeon Map (Solo)",
+		"itemValue": 20700,
+		"craftingCost": 103400
+	},
+	{
+		"id": "T4_RANDOM_DUNGEON_SOLO_TOKEN_4",
+		"title": "Exceptional Adept's Dungeon Map (Solo)",
+		"itemValue": 7500,
+		"craftingCost": 37400
+	},
+	{
+		"id": "T5_RANDOM_DUNGEON_SOLO_TOKEN_4",
+		"title": "Exceptional Expert's Dungeon Map (Solo)",
+		"itemValue": 10000,
+		"craftingCost": 50000
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_SOLO_TOKEN_4",
+		"title": "Exceptional Master's Dungeon Map (Solo)",
+		"itemValue": 13400,
+		"craftingCost": 67200
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_SOLO_TOKEN_4",
+		"title": "Exceptional Grandmaster's Dungeon Map (Solo)",
+		"itemValue": 18800,
+		"craftingCost": 93800
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_SOLO_TOKEN_4",
+		"title": "Exceptional Elder's Dungeon Map (Solo)",
+		"itemValue": 27100,
+		"craftingCost": 135400
+	},
+	{
+		"id": "T4_RANDOM_DUNGEON_TOKEN_1",
+		"title": "Adept's Dungeon Map (Group)",
+		"itemValue": 16800,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T4_RANDOM_DUNGEON_SOLO_TOKEN_1",
+			"count": 5
+		}
+	},
+	{
+		"id": "T5_RANDOM_DUNGEON_TOKEN_1",
+		"title": "Expert's Dungeon Map (Group)",
+		"itemValue": 22400,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T5_RANDOM_DUNGEON_SOLO_TOKEN_1",
+			"count": 5
+		}
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_TOKEN_1",
+		"title": "Master's Dungeon Map (Group)",
+		"itemValue": 30000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T6_RANDOM_DUNGEON_SOLO_TOKEN_1",
+			"count": 5
+		}
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_TOKEN_1",
+		"title": "Grandmaster's Dungeon Map (Group)",
+		"itemValue": 42000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T7_RANDOM_DUNGEON_SOLO_TOKEN_1",
+			"count": 5
+		}
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_TOKEN_1",
+		"title": "Elder's Dungeon Map (Group)",
+		"itemValue": 60600,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T8_RANDOM_DUNGEON_SOLO_TOKEN_1",
+			"count": 5
+		}
+	},
+	{
+		"id": "T4_RANDOM_DUNGEON_TOKEN_2",
+		"title": "Uncommon Adept's Dungeon Map (Group)",
+		"itemValue": 22000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T4_RANDOM_DUNGEON_SOLO_TOKEN_2",
+			"count": 5
+		}
+	},
+	{
+		"id": "T5_RANDOM_DUNGEON_TOKEN_2",
+		"title": "Uncommon Expert's Dungeon Map (Group)",
+		"itemValue": 29400,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T5_RANDOM_DUNGEON_SOLO_TOKEN_2",
+			"count": 5
+		}
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_TOKEN_2",
+		"title": "Uncommon Master's Dungeon Map (Group)",
+		"itemValue": 39600,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T6_RANDOM_DUNGEON_SOLO_TOKEN_2",
+			"count": 5
+		}
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_TOKEN_2",
+		"title": "Uncommon Grandmaster's Dungeon Map (Group)",
+		"itemValue": 55200,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T7_RANDOM_DUNGEON_SOLO_TOKEN_2",
+			"count": 5
+		}
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_TOKEN_2",
+		"title": "Uncommon Elder's Dungeon Map (Group)",
+		"itemValue": 79800,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T8_RANDOM_DUNGEON_SOLO_TOKEN_2",
+			"count": 5
+		}
+	},
+	{
+		"id": "T4_RANDOM_DUNGEON_TOKEN_3",
+		"title": "Rare Adept's Dungeon Map (Group)",
+		"itemValue": 28600,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T4_RANDOM_DUNGEON_SOLO_TOKEN_3",
+			"count": 5
+		}
+	},
+	{
+		"id": "T5_RANDOM_DUNGEON_TOKEN_3",
+		"title": "Rare Expert's Dungeon Map (Group)",
+		"itemValue": 38200,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T5_RANDOM_DUNGEON_SOLO_TOKEN_3",
+			"count": 5
+		}
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_TOKEN_3",
+		"title": "Rare Master's Dungeon Map (Group)",
+		"itemValue": 51400,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T6_RANDOM_DUNGEON_SOLO_TOKEN_3",
+			"count": 5
+		}
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_TOKEN_3",
+		"title": "Rare Grandmaster's Dungeon Map (Group)",
+		"itemValue": 71600,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T7_RANDOM_DUNGEON_SOLO_TOKEN_3",
+			"count": 5
+		}
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_TOKEN_3",
+		"title": "Rare Elder's Dungeon Map (Group)",
+		"itemValue": 103400,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T8_RANDOM_DUNGEON_SOLO_TOKEN_3",
+			"count": 5
+		}
+	},
+	{
+		"id": "T4_RANDOM_DUNGEON_TOKEN_4",
+		"title": "Exceptional Adept's Dungeon Map (Group)",
+		"itemValue": 37400,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T4_RANDOM_DUNGEON_SOLO_TOKEN_4",
+			"count": 5
+		}
+	},
+	{
+		"id": "T5_RANDOM_DUNGEON_TOKEN_4",
+		"title": "Exceptional Expert's Dungeon Map (Group)",
+		"itemValue": 50000,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T5_RANDOM_DUNGEON_SOLO_TOKEN_4",
+			"count": 5
+		}
+	},
+	{
+		"id": "T6_RANDOM_DUNGEON_TOKEN_4",
+		"title": "Exceptional Master's Dungeon Map (Group)",
+		"itemValue": 67200,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T6_RANDOM_DUNGEON_SOLO_TOKEN_4",
+			"count": 5
+		}
+	},
+	{
+		"id": "T7_RANDOM_DUNGEON_TOKEN_4",
+		"title": "Exceptional Grandmaster's Dungeon Map (Group)",
+		"itemValue": 93800,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T7_RANDOM_DUNGEON_SOLO_TOKEN_4",
+			"count": 5
+		}
+	},
+	{
+		"id": "T8_RANDOM_DUNGEON_TOKEN_4",
+		"title": "Exceptional Elder's Dungeon Map (Group)",
+		"itemValue": 135400,
+		"craftingCost": 0,
+		"craftingMaterial": {
+			"name": "T8_RANDOM_DUNGEON_SOLO_TOKEN_4",
+			"count": 5
+		}
+	}
+]

@@ -60,3 +60,14 @@ th {
 .city-selector {
   justify-content: right;
 }
+
+.search-input {
+  width: 350px;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+}

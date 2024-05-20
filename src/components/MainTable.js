@@ -184,6 +184,14 @@ export default function MainTable() {
 							className="search-input"
 							onChange={(e) => setSearchText(e.target.value)}
 						/>
+						<button
+							onClick={() => {
+								getCurrentPrices();
+							}}
+							className="refresh-button"
+						>
+							Refresh
+						</button>
 					</div>
 					<table className="main-table">
 						<thead>

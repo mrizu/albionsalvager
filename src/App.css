@@ -71,3 +71,14 @@ th {
   color: white;
   font-size: 24px;
 }
+
+.refresh-button {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}

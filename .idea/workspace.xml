@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c6c82d3-42ba-4d61-be73-78b0d85368cb" name="Changes" comment="sorting fix">
+    <list default="true" id="7c6c82d3-42ba-4d61-be73-78b0d85368cb" name="Changes" comment="records without prices in both cities hidden">
+      <change afterPath="$PROJECT_DIR$/src/components/CitySelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/CityContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +110,9 @@
       <workItem from="1716130319796" duration="5258000" />
       <workItem from="1716142194513" duration="13981000" />
       <workItem from="1716206694509" duration="389000" />
-      <workItem from="1716210479573" duration="2678000" />
+      <workItem from="1716210479573" duration="3107000" />
+      <workItem from="1716213638417" duration="323000" />
+      <workItem from="1716217981107" duration="7556000" />
     </task>
     <task id="LOCAL-00001" summary="Main table for both cities + hidden items counter">
       <option name="closed" value="true" />
@@ -122,15 +130,35 @@
       <option name="project" value="LOCAL" />
       <updated>1716156314327</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="records without prices in both cities hidden">
+      <option name="closed" value="true" />
+      <created>1716213301728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716213301728</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Main table for both cities + hidden items counter" />
     <MESSAGE value="sorting fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="sorting fix" />
+    <MESSAGE value="records without prices in both cities hidden" />
+    <option name="LAST_COMMIT_MESSAGE" value="records without prices in both cities hidden" />
   </component>
 </project>

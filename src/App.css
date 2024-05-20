@@ -19,7 +19,8 @@
 }
 
 .main-table, th, td {
-  margin-left:18%;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid gray;
 }
 
@@ -39,4 +40,23 @@ th {
 
 .hidden-items-counter{
   padding: 20px;
+}
+
+.dropdown-city {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.dropdown-city option {
+  padding: 10px;
+}
+
+.city-selector {
+  justify-content: right;
 }

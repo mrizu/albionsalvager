@@ -210,8 +210,8 @@ export default function MainTable() {
                                 <>
                                     <td>{d(item[`currentSellOrderMin`])}</td>
                                     <td>{d(item[`currentBuyOrderMin`])}</td>
-                                    <td>{d(item[`instantProfit`])}</td>
-                                    <td>{d(item[`buyOrderProfit`])}</td>
+                                    <td style={{color:item[`instantProfit`] > 0 ? "lime" : "red"}}>{d(item[`instantProfit`])} </td>
+                                    <td style={{color:item[`buyOrderProfit`] > 0 ? "lime" : "red"}}>{d(item[`buyOrderProfit`])}</td>
                                 </>
                             </tr>
                         ))}

@@ -84,7 +84,7 @@ export default function MainTable() {
                         (item) => item.item_id === element.id
                     );
                     element[`currentSellOrderMin`] = foundItem.sell_price_min;
-                    element[`currentBuyOrderMin`] = foundItem.buy_price_min;
+                    element[`currentBuyOrderMax`] = foundItem.buy_price_max;
 
                     if (element[`currentSellOrderMin`] === 0){
                         element[`instantProfit`] = 0;
@@ -94,7 +94,7 @@ export default function MainTable() {
                     }
 
                     element[`buyOrderProfit`] =
-                        element.salvageReturn - element[`currentBuyOrderMin`];
+                        element.salvageReturn - element[`currentBuyOrderMax`];
                 });
 
                 setDataArr(updatedDataArr);
@@ -171,7 +171,7 @@ export default function MainTable() {
                                 style={{
                                     cursor: "pointer",
                                 }}
-                                onClick={() => requestSort(`currentBuyOrderMin`)}
+                                onClick={() => requestSort(`currentBuyOrderMax`)}
                             >
                                 Current Buy Order
                             </th>
@@ -209,7 +209,7 @@ export default function MainTable() {
 
                                 <>
                                     <td>{d(item[`currentSellOrderMin`])}</td>
-                                    <td>{d(item[`currentBuyOrderMin`])}</td>
+                                    <td>{d(item[`currentBuyOrderMax`])}</td>
                                     <td style={{color:item[`instantProfit`] > 0 ? "lime" : "red"}}>{d(item[`instantProfit`])} </td>
                                     <td style={{color:item[`buyOrderProfit`] > 0 ? "lime" : "red"}}>{d(item[`buyOrderProfit`])}</td>
                                 </>

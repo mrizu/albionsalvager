@@ -19,7 +19,7 @@
 }
 
 .main-table, th, td {
-  margin-left:14%;
+  margin-left:18%;
   border: 1px solid gray;
 }
 
@@ -39,5 +39,4 @@ th {
 
 .hidden-items-counter{
   padding: 20px;
-  text-align: right;
 }

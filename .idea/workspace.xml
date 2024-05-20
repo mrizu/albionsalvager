@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c6c82d3-42ba-4d61-be73-78b0d85368cb" name="Changes" comment="Main table for both cities + hidden items counter">
+    <list default="true" id="7c6c82d3-42ba-4d61-be73-78b0d85368cb" name="Changes" comment="sorting fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainTable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,18 +29,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mrizu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mrizu&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mrizu/albionsalvager.git",
-    "accountId": "c6256b21-9600-47ec-b351-85b7f62cc777"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mrizu/albionsalvager.git&quot;,
+    &quot;accountId&quot;: &quot;c6256b21-9600-47ec-b351-85b7f62cc777&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -48,21 +49,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Projekty_Webstorm/albioncrafting/albioncraftingapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.npm start.executor": "Run",
-    "ts.external.directory.path": "C:\\Users\\karol\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\241.15989.105\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projekty_Webstorm/albionsalvager&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm start.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\karol\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\241.15989.105\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projekty_Webstorm\albionsalvager\src\data" />
@@ -101,7 +102,9 @@
       <workItem from="1716122096378" duration="491000" />
       <workItem from="1716125454240" duration="1063000" />
       <workItem from="1716130319796" duration="5258000" />
-      <workItem from="1716142194513" duration="13577000" />
+      <workItem from="1716142194513" duration="13981000" />
+      <workItem from="1716206694509" duration="389000" />
+      <workItem from="1716210479573" duration="2678000" />
     </task>
     <task id="LOCAL-00001" summary="Main table for both cities + hidden items counter">
       <option name="closed" value="true" />
@@ -111,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716155340605</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sorting fix">
+      <option name="closed" value="true" />
+      <created>1716156314327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716156314327</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Main table for both cities + hidden items counter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main table for both cities + hidden items counter" />
+    <MESSAGE value="sorting fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting fix" />
   </component>
 </project>

@@ -3,55 +3,55 @@ import data from '../data/maps.json';
 import axios from "axios";
 
 export default function MainTable () {
+    const [dataArr, setDataArr] = useState([]);
     let [isLoading, setIsLoading] = useState(true);
     let [hiddenItemsCounter, setHiddenItemsCounter] = useState(0);
     const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
-
-    let dataArr = Object.keys(data).map((key) => data[key]);
-    dataArr.forEach((element) => {
-        element.salvageReturn = element.itemValue - element.itemValue * 0.25
-    })
 
     useEffect(() => {
         getCurrentPrices();
     }, []);
 
 
-    function getAllIdsToString(){
+    function getAllIdsToString(arr){
         let allIds = "";
-        dataArr.forEach((el) => {
+        arr.forEach((el) => {
             allIds += "," + el.id
         })
         return allIds
     }
 
     async function getCurrentPrices(){
-        await axios.get(`https://europe.albion-online-data.com/api/v2/stats/prices/${getAllIdsToString()}?locations=Brecilien,Bridgewatch`)
+        let updatedDataArr = Object.keys(data).map((key) => data[key]);
+        updatedDataArr.forEach((element) => {
+            element.salvageReturn = element.itemValue - element.itemValue * 0.25
+        })
+
+        await axios.get(`https://europe.albion-online-data.com/api/v2/stats/prices/${getAllIdsToString(updatedDataArr)}?locations=Brecilien,Bridgewatch`)
             .then(response => {
                 let marketData = response.data
+                let foundItem
 
-                dataArr.forEach((element) => {
-                    let foundItem = marketData.find((item) => item.item_id === element.id && item.city === 'Brecilien');
+                updatedDataArr.forEach((element) => {
+                    foundItem = marketData.find((item) => item.item_id === element.id && item.city === 'Brecilien');
                     element.currentPriceBrecilien = foundItem.sell_price_min;
                     element.profitBrecilien = element.salvageReturn - element.currentPriceBrecilien
                 })
 
-                dataArr.forEach((element) => {
-                    let foundItem = marketData.find((item) => item.item_id === element.id && item.city === 'Bridgewatch');
+                updatedDataArr.forEach((element) => {
+                    foundItem = marketData.find((item) => item.item_id === element.id && item.city === 'Bridgewatch');
                     element.currentPriceBridgewatch = foundItem.sell_price_min;
                     element.profitBridgewatch = element.salvageReturn - element.currentPriceBridgewatch
                 })
 
-                let a = dataArr.length;
+                const countBeforeFilter = updatedDataArr.length;
 
-                dataArr = dataArr.filter((element) => {
+                updatedDataArr = updatedDataArr.filter((element) => {
                     return element.currentPriceBrecilien !== 0 || element.currentPriceBridgewatch !== 0;
                 })
 
-                setHiddenItemsCounter(a - dataArr.length);
-
-                console.log(dataArr)
-
+                setDataArr(updatedDataArr)
+                setHiddenItemsCounter(countBeforeFilter - updatedDataArr.length);
                 setIsLoading(false);
             })
             .catch(error => {

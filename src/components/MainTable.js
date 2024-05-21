@@ -85,7 +85,7 @@ export default function MainTable() {
 			.then((response) => {
 				let marketData = response.data;
 				let foundItem;
-
+				const now = new Date();
 				updatedDataArr.forEach((element) => {
 					foundItem = marketData.find((item) => item.item_id === element.id);
 					element[`currentSellOrderMin`] = foundItem.sell_price_min;
@@ -94,6 +94,13 @@ export default function MainTable() {
 						element.salvageReturn - element[`currentSellOrderMin`];
 					element[`buyOrderProfit`] =
 						element.salvageReturn - element[`currentBuyOrderMax`];
+
+					element[`sellMinHoursAgo`] = Math.floor(
+						(now - new Date(foundItem.sell_price_min_date)) / 1000 / 60 / 60
+					);
+					element[`buyMaxHoursAgo`] = Math.floor(
+						(now - new Date(foundItem.buy_price_max_date)) / 1000 / 60 / 60
+					);
 				});
 
 				updatedDataArr.forEach((element) => {
@@ -253,6 +260,8 @@ export default function MainTable() {
 								>
 									Buy order profit
 								</th>
+								<th>Sell hours ago</th>
+								<th>Buy hours ago</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -286,6 +295,8 @@ export default function MainTable() {
 										>
 											{d(item[`buyOrderProfit`])}
 										</td>
+										<td>{d(item[`sellMinHoursAgo`])}</td>
+										<td>{d(item[`buyMaxHoursAgo`])}</td>
 									</>
 								</tr>
 							))}

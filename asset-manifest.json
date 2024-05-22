@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/albionsalvager/static/css/main.11d40c29.css",
-    "main.js": "/albionsalvager/static/js/main.5fde222a.js",
+    "main.css": "/albionsalvager/static/css/main.50acad49.css",
+    "main.js": "/albionsalvager/static/js/main.a2ea474a.js",
     "static/js/453.c234b848.chunk.js": "/albionsalvager/static/js/453.c234b848.chunk.js",
     "index.html": "/albionsalvager/index.html",
-    "main.11d40c29.css.map": "/albionsalvager/static/css/main.11d40c29.css.map",
-    "main.5fde222a.js.map": "/albionsalvager/static/js/main.5fde222a.js.map",
+    "main.50acad49.css.map": "/albionsalvager/static/css/main.50acad49.css.map",
+    "main.a2ea474a.js.map": "/albionsalvager/static/js/main.a2ea474a.js.map",
     "453.c234b848.chunk.js.map": "/albionsalvager/static/js/453.c234b848.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11d40c29.css",
-    "static/js/main.5fde222a.js"
+    "static/css/main.50acad49.css",
+    "static/js/main.a2ea474a.js"
   ]
 }

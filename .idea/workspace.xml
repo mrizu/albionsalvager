@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c6c82d3-42ba-4d61-be73-78b0d85368cb" name="Changes" comment="profit colors" />
+    <list default="true" id="7c6c82d3-42ba-4d61-be73-78b0d85368cb" name="Changes" comment="buy order price fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainTable.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,6 +108,8 @@
       <workItem from="1716213638417" duration="323000" />
       <workItem from="1716217981107" duration="8138000" />
       <workItem from="1716230601619" duration="711000" />
+      <workItem from="1716231709664" duration="176000" />
+      <workItem from="1716378823824" duration="2582000" />
     </task>
     <task id="LOCAL-00001" summary="Main table for both cities + hidden items counter">
       <option name="closed" value="true" />
@@ -153,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716231159070</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="buy order price fix">
+      <option name="closed" value="true" />
+      <created>1716231835150</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716231835150</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +191,7 @@
     <MESSAGE value="city selector + buy order prices" />
     <MESSAGE value="page title changed" />
     <MESSAGE value="profit colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="profit colors" />
+    <MESSAGE value="buy order price fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="buy order price fix" />
   </component>
 </project>

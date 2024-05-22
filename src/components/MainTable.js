@@ -21,10 +21,10 @@ const d = (n) => {
         if (n > 1_000_00) {
             return `${Number(n / 1_000_000).toFixed(2)}m`.trim();
         }
-        if (n > 10_009) {
+        if (n > 10_000) {
             return `${Number(n / 1_000).toFixed(0)}k`.trim();
         }
-        if (n > 1_009) {
+        if (n > 1_000) {
             return `${Number(n / 1_000).toFixed(2)}k`.trim();
         }
         if (n < -1_000_000) {
@@ -45,6 +45,7 @@ const d = (n) => {
 export default function MainTable() {
     let [dataArr, setDataArr] = useState([]);
     let [isLoading, setIsLoading] = useState(true);
+    let [searchText, setSearchText] = useState("");
     let {selectedCity} = useCityContext();
     const [sortConfig, setSortConfig] = useState({
         key: null,
@@ -53,7 +54,7 @@ export default function MainTable() {
 
     useEffect(() => {
         getCurrentPrices();
-    }, [selectedCity]);
+    }, [selectedCity, searchText]);
 
     function getAllIdsToString(arr) {
         let allIds = "";
@@ -80,24 +81,64 @@ export default function MainTable() {
                 let foundItem;
 
                 updatedDataArr.forEach((element) => {
-                    foundItem = marketData.find(
-                        (item) => item.item_id === element.id
-                    );
+                    foundItem = marketData.find((item) => item.item_id === element.id);
                     element[`currentSellOrderMin`] = foundItem.sell_price_min;
                     element[`currentBuyOrderMax`] = foundItem.buy_price_max;
-
-                    if (element[`currentSellOrderMin`] === 0){
-                        element[`instantProfit`] = 0;
-                    }else{
-                        element[`instantProfit`] =
-                            element.salvageReturn - element[`currentSellOrderMin`];
-                    }
-
+                    element[`instantProfit`] =
+                        element.salvageReturn - element[`currentSellOrderMin`];
                     element[`buyOrderProfit`] =
                         element.salvageReturn - element[`currentBuyOrderMax`];
                 });
 
-                setDataArr(updatedDataArr);
+                updatedDataArr.forEach((element) => {
+                    if (element.title.includes("(Group)")) {
+                        const soloMap = updatedDataArr.find(
+                            (item) => item.title === element.title.replace("Group", "Solo")
+                        );
+                        if (!soloMap) {
+                            return;
+                        }
+                        element.salvageReturn += soloMap.salvageReturn;
+                        element[`instantProfit`] =
+                            element.salvageReturn - element[`currentSellOrderMin`];
+                        element[`buyOrderProfit`] =
+                            element.salvageReturn - element[`currentBuyOrderMax`];
+                    }
+                });
+
+                updatedDataArr.forEach((element) => {
+                    if (element.title.includes("(Large Group)")) {
+                        const groupMap = updatedDataArr.find(
+                            (item) => item.title === element.title.replace("Large ", "")
+                        );
+                        if (!groupMap) {
+                            return;
+                        }
+                        element.salvageReturn += groupMap.salvageReturn;
+                        element[`instantProfit`] =
+                            element.salvageReturn - element[`currentSellOrderMin`];
+                        element[`buyOrderProfit`] =
+                            element.salvageReturn - element[`currentBuyOrderMax`];
+                    }
+                });
+
+                updatedDataArr.forEach((element) => {
+                    if (element[`currentSellOrderMin`] === 0) {
+                        element[`instantProfit`] = 0;
+                    }
+                });
+
+                updatedDataArr.filter(
+                    (item) => item.title.toLowerCase().includes(searchText.toLowerCase())
+                );
+
+                setDataArr(
+                    updatedDataArr.filter(
+                        (item) =>
+                            searchText === "" ||
+                            item.title.toLowerCase().includes(searchText.toLowerCase())
+                    )
+                );
                 setIsLoading(false);
             })
             .catch((error) => {
@@ -131,6 +172,12 @@ export default function MainTable() {
                 <img src="https://i.gifer.com/ZKZg.gif" alt="Loading..." />
             ) : (
                 <div>
+                    <input
+                        type="text"
+                        placeholder="Search..."
+                        className="search-input"
+                        onChange={(e) => setSearchText(e.target.value)}
+                    />
                     <table className="main-table">
                         <thead>
                         <tr>
@@ -210,8 +257,8 @@ export default function MainTable() {
                                 <>
                                     <td>{d(item[`currentSellOrderMin`])}</td>
                                     <td>{d(item[`currentBuyOrderMax`])}</td>
-                                    <td style={{color:item[`instantProfit`] > 0 ? "lime" : "red"}}>{d(item[`instantProfit`])} </td>
-                                    <td style={{color:item[`buyOrderProfit`] > 0 ? "lime" : "red"}}>{d(item[`buyOrderProfit`])}</td>
+                                    <td style={{color: item[`instantProfit`] > 0 ? "lime" : "red"}}>{d(item[`instantProfit`])} </td>
+                                    <td style={{color: item[`buyOrderProfit`] > 0 ? "lime" : "red"}}>{d(item[`buyOrderProfit`])}</td>
                                 </>
                             </tr>
                         ))}

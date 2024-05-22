@@ -22,6 +22,7 @@
   margin-left: auto;
   margin-right: auto;
   border: 1px solid gray;
+  min-width: 75%;
 }
 
 th {
@@ -59,4 +60,15 @@ th {
 
 .city-selector {
   justify-content: right;
+}
+
+.search-input {
+  width: 74%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-size: 20px;
 }
